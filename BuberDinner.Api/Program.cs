@@ -12,11 +12,13 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 var app = builder.Build();
+{
+    app.UseExceptionHandler("/error");
+    app.UseHttpsRedirection();
 
-app.UseHttpsRedirection();
-
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    app.MapControllerRoute(
+        name: "default",
+        pattern: "{controller=Home}/{action=Index}/{id?}");
+}
 
 app.Run();

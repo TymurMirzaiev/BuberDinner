@@ -17,8 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requests", "Requests", "{40
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Authentication", "Authentication", "{B43C852C-02AD-4E62-99D9-A7AAB1F9245E}"
 	ProjectSection(SolutionItems) = preProject
-		Login.http = Login.http
-		Register.http = Register.http
+		Requests\Login.http = Requests\Login.http
+		Requests\Register.http = Requests\Register.http
 	EndProjectSection
 EndProject
 Global
