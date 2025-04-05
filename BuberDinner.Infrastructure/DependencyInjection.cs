@@ -1,10 +1,8 @@
-﻿using BuberDinner.Application.Services.Authentication;
+﻿using BuberDinner.Application.Common.Interfaces.Authentication;
+using BuberDinner.Application.Common.Services;
+using BuberDinner.Infrastructure.Authentication;
+using BuberDinner.Infrastructure.Services;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BuberDinner.Infrastructure
 {
@@ -12,7 +10,8 @@ namespace BuberDinner.Infrastructure
     {
         public static IServiceCollection AddInfrastructure(this IServiceCollection services)
         {
-
+            services.AddSingleton<IJwtTokenGenerator, JwtTokenGenerator>();
+            services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
 
             return services;
         }
