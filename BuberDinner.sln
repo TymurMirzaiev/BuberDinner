@@ -13,13 +13,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuberDinner.Domain", "Buber
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuberDinner.Infrastructure", "BuberDinner.Infrastructure\BuberDinner.Infrastructure.csproj", "{9519D3B8-2DC6-406C-986D-D9C8C4F9035F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Requests", "Requests", "{40478637-92AC-44AC-AA04-C2BCF6B5907C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Authentication", "Authentication", "{B43C852C-02AD-4E62-99D9-A7AAB1F9245E}"
+	ProjectSection(SolutionItems) = preProject
+		Login.http = Login.http
+		Register.http = Register.http
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{02B60CEA-8B44-40A8-8607-0FFD0F76BEE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -42,5 +47,11 @@ Global
 		{9519D3B8-2DC6-406C-986D-D9C8C4F9035F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9519D3B8-2DC6-406C-986D-D9C8C4F9035F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9519D3B8-2DC6-406C-986D-D9C8C4F9035F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B43C852C-02AD-4E62-99D9-A7AAB1F9245E} = {40478637-92AC-44AC-AA04-C2BCF6B5907C}
 	EndGlobalSection
 EndGlobal
