@@ -1,0 +1,4 @@
+@host=https://localhost:7087
+
+GET {{host}}/dinners
+Authorization: Bearer should be token here
